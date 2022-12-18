@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.parent__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 650px;
+}
+
+footer, .headerAccount{
+    background: #001529 !important;
+    color: #fff !important;
+}
+header{
+    background:    #1677ff !important;
+    color: #fff !important;
+}
+
+main{
+    height: 450px !important;
+    color: #000 ;
+} 
+
+.colorfff{
+    color: #fff !important;
+}
+
+.bgColorBlue{
+    background: #1677ff;
+}
+
