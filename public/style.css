@@ -30,6 +30,7 @@ header{
 
 main{
     height: 450px !important;
+    overflow: auto;
     color: #000 ;
 } 
 
@@ -39,5 +40,11 @@ main{
 
 .bgColorBlue{
     background: #1677ff;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.bgColorBlue:hover{
+    background: #16a9f0;
 }
 
