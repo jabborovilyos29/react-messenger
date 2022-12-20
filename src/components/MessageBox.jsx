@@ -16,7 +16,7 @@ export default function MessageBox({inputMsg, forFilterUser}) {
     <>
     {
       message === ''?
-      <Empty description={false} style={{marginTop: '150px'}}/>
+      <Empty description={false} style={{marginRight: '250px', marginBottom: '200px'}}/>
       :
       message
       .filter(item => {
@@ -24,10 +24,11 @@ export default function MessageBox({inputMsg, forFilterUser}) {
       })
       .map(item => {
         return(
-        <Card key={item.id} size={'small'} style={{ 
-          width: 250, 
-          margin: 10,
-        }}>
+        <Card 
+        key={item.id} 
+        size={'small'} 
+        className='messages'
+        >
          <p>{item.text}</p>
         </Card>
      

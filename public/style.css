@@ -29,6 +29,10 @@ header{
 }
 
 main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
     height: 450px !important;
     overflow: auto;
     color: #000 ;
@@ -48,3 +52,29 @@ main{
     background: #16a9f0;
 }
 
+.headerComponent{
+    cursor: default;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerIconInfo{
+    font-size: 20px;
+    opacity: 0.7;
+    transition: .2s;
+}
+
+.headerIconInfo:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.messages{
+    
+    background: #1677ff;
+    color: #fff;
+    max-width: 250px;
+    margin: 7px;
+    margin-right: 10px;
+}
