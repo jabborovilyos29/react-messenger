@@ -39,7 +39,6 @@ console.log(inputMsg)
         <Button 
         type="primary"
         onClick={saveMsg}
-      
         >Send</Button>
       </Input.Group>
     </>

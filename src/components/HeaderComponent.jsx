@@ -12,8 +12,7 @@ export default function HeaderComponent({callBack}) {
     setHeaderUser(newUser)
   }, [callBack])
   
-  
-  
+
   return (
     <>
     {
@@ -24,7 +23,10 @@ export default function HeaderComponent({callBack}) {
       :
       <div className='headerComponent'>
         <h3> <Avatar size="large" src={headerUser.picture.large} /> {headerUser.name.last} {headerUser.name.first} </h3>
-        <h3> <InfoCircleOutlined className='headerIconInfo' /></h3>
+        <h3> <InfoCircleOutlined 
+        className='headerIconInfo' 
+        />
+        </h3>
       </div>
     }
     </>
