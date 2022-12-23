@@ -9,7 +9,7 @@ console.log(inputMsg)
   const [value, setValue] = useState('')
 
   function saveMsg(){
-    if(value && callBack !== ''){ 
+    if(value && callBack !== '' ){ 
          setInputMsg(
              [...inputMsg, {
                  id: Math.random(),

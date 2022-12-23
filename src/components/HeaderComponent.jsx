@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {Avatar} from 'antd'
+import { Avatar } from 'antd'
 import { InfoCircleOutlined } from '@ant-design/icons'
 
 
@@ -12,7 +12,6 @@ export default function HeaderComponent({callBack}) {
     setHeaderUser(newUser)
   }, [callBack])
   
-
   return (
     <>
     {
