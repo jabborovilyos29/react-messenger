@@ -5,7 +5,11 @@ export default function MessageBox({ inputMsg, forFilterUser }) {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    setMessage(() => inputMsg);
+    fetch("http://localhost:9999/send-message")
+    .then((res) => res.json())
+    .then((contacts) => 
+      setMessage(contacts)
+    )
   }, [inputMsg]);
 
   console.log(forFilterUser);
