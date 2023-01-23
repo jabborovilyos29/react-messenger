@@ -71,10 +71,30 @@ main{
 }
 
 .messages{
-    
+    cursor: pointer;
     background: #1677ff;
     color: #fff;
     max-width: 250px;
     margin: 7px;
     margin-right: 10px;
+}
+
+.message__block{
+    display: flex;
+    flex-direction: row;
+}
+
+.edit{
+    width: 25px;
+    height: 20px;
+    border-radius: 150px;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s linear;
+    opacity: 0;
+    margin-bottom: 8px;
+}
+
+.message__block:hover .edit{
+    opacity: 1;
 }

@@ -37,8 +37,8 @@ const ContactList = ({setCallBack, setForFilterUser}) => {
           onClick={()=> callBackInfo(item)}
           >
             <List.Item.Meta
-              avatar={<Avatar  src={item.picture.large} />}
-              title={<div className="colorfff">{item.name.last}</div>}
+              avatar={<Avatar  src={item.picture} />}
+              title={<div className="colorfff">{item.firstname}</div>}
             />
 
           </List.Item>
